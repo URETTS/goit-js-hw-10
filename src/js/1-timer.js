@@ -32,7 +32,6 @@ function toggleControls(isActive) {
   startButton.disabled = !isActive;
 }
 
-// Параметри для flatpickr
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -44,6 +43,7 @@ const options = {
       iziToast.error({
         title: "Error",
         message: "Please choose a date in the future",
+        position: "topRight",
       });
       startButton.disabled = true;
     } else {
@@ -55,7 +55,7 @@ const options = {
 
 flatpickr(datetimePicker, options);
 
-// Обробник натискання на кнопку Start
+
 startButton.addEventListener("click", () => {
   if (!userSelectedDate) return;
 

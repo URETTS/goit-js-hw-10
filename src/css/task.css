@@ -83,3 +83,31 @@ button:disabled {
     background: #cfcfcf;
     color: #989898;
 }
+
+form {
+    padding: 40px 0 0 40px;
+}
+
+.form input[type="number"] {
+    width: 360px;
+    height: 40px;
+    display: block;
+}
+
+.form fieldset {
+    width: 360px;
+    height: 64px;
+    padding: 0;
+}
+.form fieldset:active{
+    border: 1px solid #4e75ff;
+}
+
+.form button {
+    border-radius: 8px;
+        padding: 8px 16px;
+        width: 360px;
+        height: 40px;
+        margin-left: 0;
+        margin-top: 24px;
+}
